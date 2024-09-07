@@ -80,19 +80,16 @@ function TextArea(props) {
             <button type="button" className="btn btn-danger m-2" onClick={handleClearText}>Clear Text</button>
         </div>
         <div className="container">
-            {!charcaterCount===0?<h1>Your Text Summary</h1>:""}
-            {!charcaterCount===0?<p>{charcaterCount} characters</p>:""}
-            {!wordCount===0?<p>{wordCount} words</p>:""}
+            <h1>Your Text Summary</h1>
+            <p>{charcaterCount} characters</p>
+            <p>{wordCount} words</p>
             <hr />
-            {!textPreview===""?<h1>Preview:</h1>:""}
-            {!textPreview===""?<p id="output">{textPreview}</p>:""}
-            {!textPreview===""?
-            <>
+            <h1>Preview:</h1>
+            <p id="output">{textPreview}</p>
             <input type="text" className="form-control w-25 d-inline" id="" onChange={handleSearchText}/>
             <button type="button" className="btn btn-primary mx-4" onClick={handleSearch}>Search</button>
             <button type="button" className="btn btn-danger" onClick={handleCancelSearch}>Cancel</button>
-            </>
-            :""}
+            
 
             
         </div>

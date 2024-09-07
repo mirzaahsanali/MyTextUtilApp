@@ -3,7 +3,6 @@ import Navbar from "./Components/Navbar";
 import Alert from "./Components/Alert";
 import TextArea from "./Components/TextArea";
 import { useState } from "react";
-import About from "./Components/About";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
@@ -27,7 +26,7 @@ function App() {
 				></Route>
 				<Route
 					path="/about"
-					element={<About/>}
+					element={<h1>This is about page</h1>}
 				></Route>
 				<Route
 					path="/*"
